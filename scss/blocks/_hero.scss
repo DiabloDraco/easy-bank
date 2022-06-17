@@ -1,0 +1,51 @@
+.hero {
+    position: relative;
+    &__container {
+
+    }
+    
+    &__inner-wrapper {
+        max-width: 447px;
+        width: 100%;
+        margin-top: 170px;
+    }
+    
+    &__heading {
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 100;
+        font-size: 56px;
+        line-height: 64px;
+        letter-spacing: -1px;
+        color: #2D314D;   
+        max-width: 394px;
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    
+    &__text {
+        font-family: 'PublicSans';
+        font-size: 18px;
+        line-height: 28px;
+        letter-spacing: -0.28125px;
+        color: #9597A5;
+        margin-bottom: 36px;
+        width: 100%;
+    }
+    
+    &__button {
+        padding: 8px 36px 8px 33px;
+        background: linear-gradient(135deg, #33D35E 0%, #2AB6D9 99.58%);
+        border-radius: 22px;
+        font-family: 'Public Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 28px;
+        color: #FFFFFF;
+        min-width: 150px;
+        min-height: 44px;
+        margin-bottom: 170px;
+    }
+}
+

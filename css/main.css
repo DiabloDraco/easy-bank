@@ -377,6 +377,7 @@ body {
   padding: 0;
   font-family: "Public Sans", sans-serif;
   font-size: 16px;
+  position: relative;
 }
 
 img {
@@ -480,6 +481,9 @@ a {
 @media only screen and (max-width: 700px) {
   /* Mobile */
   .header {
+    max-width: 375px;
+    width: 100%;
+    position: fixed;
     background-color: #fff;
     z-index: 999999;
   }
@@ -605,6 +609,7 @@ a {
     background: #F2F2F2;
     padding-bottom: 88px;
     padding-top: 0px;
+    padding-top: 65px;
     background-image: none;
     background-repeat: no-repeat;
     background-position: calc(50% + 300px) calc(40%);

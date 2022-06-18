@@ -68,6 +68,9 @@
     /* Mobile */
 
     .header {
+        max-width: 375px;
+        width: 100%;
+        position: fixed;
         background-color: #fff;
         z-index: 999999;
         &__container {

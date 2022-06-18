@@ -1,27 +1,30 @@
 .header {
     background-color: #fff;
+    z-index: 999999;
     &__container {
-        padding-top: 18px;
+        padding-top: 10px;
+        padding-bottom: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
+        z-index: 999999;
     }
-
+    
     &__img-link {
-
+        
     }
-
+    
     &__nav {
     }
-
+    
     &__list {
         display: flex;
         gap: 30px;
     }
-
+    
     &__item {
     }
-
+    
     &__item-link {
         font-family: 'PublicSans';
         font-weight: 400;
@@ -49,5 +52,16 @@
         color: #FFFFFF;
         min-width: 150px;
     }
+    
+    &__list-btn {
+        display: none;
+    }
+    
+    &__burg {
+    }
+    
+    &__cross {
+    }
+    
 }
 

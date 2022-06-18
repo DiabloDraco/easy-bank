@@ -1,15 +1,22 @@
 .hero {
-    position: relative;
+    background: #F2F2F2;
+    padding-bottom: 170px;
+    padding-top: 170px;
+    background-image: url("./../../images/bg-img-main.png");
+    background-repeat: no-repeat;
+    background-position: calc(50% + 300px) calc(40%);
     &__container {
-
+        max-width: 1150px;
+        width: 100%;
+        position: relative;
     }
     
     &__inner-wrapper {
         max-width: 447px;
         width: 100%;
-        margin-top: 170px;
     }
-    
+    &__right {
+    }
     &__heading {
         font-family: 'Public Sans';
         font-style: normal;

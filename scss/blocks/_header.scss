@@ -79,17 +79,30 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
+            position: relative;
         }
         
         &__img-link {
             
         }
-        
+           
         &__nav {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            height: calc(100vh - 100%);
+            background: linear-gradient(0deg, rgba(254, 252, 247, 0.504981) 0%, #FEFCF7 55.94%);
+            align-items: flex-start;
+            justify-content: center;
+            padding-top: 32px;
+            transform: translateY(-2%);
         }
         
         &__list {
-            display: none;
+            display: flex;
+            flex-direction: column;
             gap: 30px;
         }
         
@@ -138,6 +151,19 @@
         &__cross {
             display: none;
         }
-        
+
+        .header__container--active {
+            .header__nav {
+                display: flex;
+            }
+
+            .header__burg {
+                display: none;
+            }
+            
+            .header__cross {
+                display: inline-block;
+            } 
+        }
     }
 }

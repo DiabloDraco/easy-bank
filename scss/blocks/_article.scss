@@ -1,7 +1,8 @@
 .articles {
-
+    background-color: #F2F2F2;
+    padding-top: 80px;
     &__container {
-        margin-bottom: 80px;
+        padding-bottom: 80px;
     }
 
     &__heading {
@@ -33,7 +34,7 @@
     }
 
     &__item-pic {
-        width: 255px;
+        width: 100%;
         height: 200px;
         object-fit: contain;
     }
@@ -73,4 +74,99 @@
         letter-spacing: -0.203125px;
         color: #9597A5;        
     }
+}
+
+
+@media only screen and (max-width: 700px) { 
+    /* MOBILE */
+
+    .articles {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        &__container {
+            padding-top: 88px;
+            padding-bottom: 88px;
+            max-width: 367px;
+        }
+    
+        &__heading {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 32px;
+            line-height: 38px;
+            letter-spacing: -0.714286px;
+            color: #2D314D;
+            margin-bottom: 31px;
+            text-align: center;
+        }
+    
+        &__list {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 24px;
+        }
+    
+        &__item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            max-width: 327px;
+            width: 100%;
+            background: #FFFFFF;
+            border-radius: 5px;
+        }
+    
+        &__inner-wrapper {
+            padding: 25px 31px 31px 25px;
+        }
+    
+        &__item-pic {
+            max-width: 327px;
+            width: 100%;
+            height: 200px;
+            object-fit: contain;
+        }
+    
+        &__by {
+            font-family: 'PublicSans';
+            font-size: 10px;
+            line-height: 18px;
+            letter-spacing: -0.15625px;
+            color: #9597A5;        
+            margin-top: 25px;
+            margin-bottom: 8px;
+        }
+    
+        &__item-heading {
+            font-family: 'Public Sans';
+            font-style: normal;
+            font-weight: 100;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.285714px;
+            color: #2D314D;
+            margin-bottom: 8px;
+            &:hover {
+                color:#30C88F;
+            }
+            &:active {
+                opacity: 0.8;
+            }
+            cursor: pointer;
+        }
+    
+        &__item-text {
+            font-family: 'PublicSans';
+            font-size: 13px;
+            line-height: 18px;
+            letter-spacing: -0.203125px;
+            color: #9597A5;        
+        }
+    }
+    
 }
